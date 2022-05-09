@@ -14,14 +14,14 @@ const SearchBar = ({ handleSearch, setSearchTerm, searchTerm, category }) => {
           console.log(e.target.value);
         }}
       />
-      <DropdownButton
+      {/* <DropdownButton
         id="dropdown-basic-button"
         title="Category"
         variant={"success"}
       >
         {category &&
           category.map((cat) => <Dropdown.Item href="#">{cat}</Dropdown.Item>)}
-      </DropdownButton>
+      </DropdownButton> */}
       <button
         onClick={() => {
           handleSearch(searchTerm);

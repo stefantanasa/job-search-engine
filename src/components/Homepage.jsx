@@ -15,7 +15,8 @@ const Homepage = () => {
       );
       if (response.ok) {
         let data = await response.json();
-        setSearchTerm(data.data);
+        setSearchResult(data.data);
+        console.log("search result: ", data.data);
       }
       console.log("✅Searchwent well!");
     } catch (error) {
