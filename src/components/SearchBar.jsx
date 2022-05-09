@@ -1,7 +1,7 @@
 import React from "react";
 import { Form, FormControl, Button } from "react-bootstrap";
-
-const SearchBar = ({ handleSearch, setSearchTerm, searchTerm }) => {
+import { Dropdown, DropdownButton } from "react-bootstrap";
+const SearchBar = ({ handleSearch, setSearchTerm, searchTerm, category }) => {
   return (
     <div className="d-flex">
       <input
@@ -14,6 +14,14 @@ const SearchBar = ({ handleSearch, setSearchTerm, searchTerm }) => {
           console.log(e.target.value);
         }}
       />
+      <DropdownButton
+        id="dropdown-basic-button"
+        title="Category"
+        variant={"success"}
+      >
+        {category &&
+          category.map((cat) => <Dropdown.Item href="#">{cat}</Dropdown.Item>)}
+      </DropdownButton>
       <button
         onClick={() => {
           handleSearch(searchTerm);
