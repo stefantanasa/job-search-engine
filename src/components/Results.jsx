@@ -1,12 +1,16 @@
 import React from "react";
+import { Col, Container } from "react-bootstrap";
 import JobCard from "./JobCard";
 
-const Results = () => {
+const Results = ({ searchResult }) => {
   return (
-    <div>
-      <h1>Results</h1>
-      <JobCard />
-    </div>
+    <Container>
+      <Col>
+        {searchResult.map((job) => (
+          <JobCard key={job._id} job={job} />
+        ))}
+      </Col>
+    </Container>
   );
 };
 

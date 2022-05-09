@@ -5,7 +5,6 @@ const CompanyDetails = () => {
   return (
     <div>
       <h1>CompanyDetails</h1>
-      <JobCard />
     </div>
   );
 };
