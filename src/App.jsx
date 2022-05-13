@@ -4,7 +4,6 @@ import Homepage from "./components/Homepage";
 import CompanyDetails from "./components/CompanyDetails";
 import "bootstrap/dist/css/bootstrap.css";
 import { Container } from "react-bootstrap";
-import SearchBar from "./components/SearchBar";
 
 function App() {
   return (
