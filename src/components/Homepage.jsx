@@ -3,6 +3,7 @@ import Results from "./Results";
 import SearchBar from "./SearchBar";
 import { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
+
 const Homepage = () => {
   const [searchResult, setSearchResult] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
