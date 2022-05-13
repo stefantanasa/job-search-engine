@@ -1,10 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import companySlice from "../slices/companySlice";
-import favSlice from "../slices/favSlice";
-import searchSlice from "../slices/searchSlice";
+import companyReducer from "../slices/companySlice";
+import favReducer from "../slices/favSlice";
+import searchReducer from "../slices/searchSlice";
 
 export default configureStore({
   reducer: {
-    company: company,
+    company: companyReducer,
+    fav: favReducer,
+    search: searchReducer,
   },
 });
